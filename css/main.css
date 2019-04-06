@@ -98,3 +98,9 @@ table.striped>tbody>tr>td{
 #section-nav{
   padding-top: 0px;
 }
+
+.count{
+  border: 1px grey hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
