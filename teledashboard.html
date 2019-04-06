@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tele-Dashboard</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">[BRAND_NAME]</a>
+          <a href="#" data-target='slide-out' class="sidenav-trigger button-collapse show-on-large right">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="index.html">Dashboard</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+
+          <!-- Side nav -->
+          <ul id="slide-out" class="sidenav">
+          <li>
+            <div class="user-view">
+            <div class="background">
+                <img src="img/ocean.jpg" alt="">
+            </div>
+            <a href="#">
+                <img class="circle" src="img/person1.jpg" alt="">
+            </a>
+            <a href="#">
+                <span class="name white-text">
+                John Doe
+                </span>
+            </a>
+            <a href="#">
+                <span class="email white-text">
+                joe@gmail.com
+                </span>
+            </a>
+            </div>
+          </li>
+          <li><a href="index.html"> <i class="material-icons">dashboard</i> Dashboard</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a class="subheader">Account Controls</a>
+          </li>
+          <li>
+            <a href="login.html" class="waves-effect">Logout</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+
+    <!-- Section: Tele-Dashboard -->
+    <section class="section section-working">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="card-panel blue ligten-4 white-text center">
+                        <div class="input-field add">
+                            <a href="telecaller.html"> 
+                                <button class="btn waves-effect btn-large blue darken-3">
+                                    ADD LEADS
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">
+                    <div class="card-panel blue ligten-4 blue-text center">
+                        <div class="input-field">
+                            <ul class="collapsible">
+                                <li>
+                                <div class="collapsible-header" id="ch">
+                                    <button class="btn waves-effect btn-large blue darken-3">
+                                        LEADS
+                                    </button>
+                                </div>
+                                <div class="collapsible-body">
+                                    <a href="leads.html" class="blue white-text">
+                                        <h5 class="white-text">Leads</h5>
+                                    </a>
+                                    <hr>
+                                    <a href="noncontact.html" class="blue white-text">
+                                        <h5 class="white-text">Non-Contact</h5>
+                                    </a>
+                                    <hr>
+                                    <a href="followup.html" class="blue white-text">
+                                        <h5 class="white-text">Follow-Up</h5>
+                                    </a>
+                                    <hr>
+                                    <a href="pending.html" class="blue white-text">
+                                        <h5 class="white-text">Pending Follow-Up</h5>
+                                    </a>
+                                    <hr>
+                                    <a href="walkin.html" class="blue white-text">
+                                        <h5 class="white-text">Walkin</h5>
+                                    </a>
+                                    <hr>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6 offset-l3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Quick ToDos</span>
+                            <form id="todo-form">
+                            <div class="input-field">
+                                <input type="text" id="todo" placeholder="Add ToDo...">
+                            </div>
+                            </form>
+                            <ul class="collection todos">
+                            <li class="collection-item">
+                                <div>
+                                ToDo One <a href="#" class="secondary-content delete">
+                                    <i class="material-icons">close</i>
+                                </a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>
+                                ToDo Two <a href="#" class="secondary-content delete">
+                                    <i class="material-icons">close</i>
+                                    </a>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="section section-footer blue darken-2 white-text center">
+        <p>Admin Panel Copyright &copy; 2019</p>
+    </section>
+
+    <!-- Preloader -->
+    <div id="loader" class="loader preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    // Hide Sections
+    $('.section').hide();
+
+    setTimeout(function () {
+      $(document).ready(function () {
+        // Show Sections
+        $('.section').fadeIn();
+
+        // Init Collapsible
+        $('.collapsible').collapsible();
+
+        // Hide Preloader
+        $('.loader').fadeOut();
+
+        //Init Side nav
+        $('.sidenav').sidenav();
+
+        // Init Modal
+        $('.modal').modal();
+
+        // Quick ToDos
+        $('#todo-form').submit(function (e) {
+          const output = `<li class="collection-item">
+              <div>${$('#todo').val()}
+                 <a href="#" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                </a>
+              </div>
+            </li>`;
+          $('.todos').append(output);
+
+          Materialize.toast('ToDo Added', 3000)
+          e.preventDefault();
+        });
+
+        // Delete Todos
+        $('.todos').on('click', '.delete', function (e) {
+          $(this).parent().parent().remove();
+          Materialize.toast('ToDo Removed', 3000)
+          e.preventDefault();
+        });
+
+        // Counter
+        $('.count').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+              duration: 1000,
+              easing: 'swing',
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              }
+            });
+        });
+
+      });
+    }, 1000);
+  </script>
+
+    
+</body>
+</html>
